@@ -11,7 +11,6 @@ function ArtistView() {
             const response = await fetch(API_URL)
             const data = await response.json()
             const albums = data.results.filter(item => item.collectionType === 'Album')
-            console.log(albums)
             setArtistData(albums)
         }
 
