@@ -37,14 +37,14 @@ function App() {
       {message}
           <Router>
               <Routes>
-                  <Route path="/" element={
+                  <Route exact path='/' element={
                       <>
                           <SearchBar handleSearch = {handleSearch}/>
                           <Gallery data={data} />
                       </>
                   } />
-                  <Route path="/album/:id" element={<AlbumView />} />
-                  <Route path="/artist/:id" element={<ArtistView />} />
+                  <Route path='/album/:id' element={<AlbumView />} />
+                  <Route path='/artist/:id' element={<ArtistView />} />
               </Routes>
           </Router>
       </div>
